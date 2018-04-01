@@ -1,4 +1,6 @@
-Snipcart API, supporting .NET Standard 1.6+
+## Welcome to the .NET Snipcart SDK 
+
+Snipcart API, supporting .NET Standard 1.3+
 
 ## Reference
 
@@ -13,6 +15,11 @@ Coming soon
 ## Usage 
 
 ### Initialise the Snipcart client
+
+```csharp
+using Snipcart;
+using Snipcart.Models;
+```
 
 ```csharp
 SnipcartClient client = new SnipcartClient("[your api key here]");
@@ -39,7 +46,8 @@ else
 ### Update Request Example
 
 ```csharp
-Order order = client.UpdateOrderAsync("[order token/guid]", new OrderPutOptions() { trackingUrl = "http://test.com" }).Result;
+Order order = client.UpdateOrderAsync("[order token/guid]", 
+	new OrderPutOptions() { trackingUrl = "http://test.com" }).Result;
 ```
 
 ## Implemented endpoints

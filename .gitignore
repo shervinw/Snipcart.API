@@ -6,6 +6,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+Snipcart.NET451/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
